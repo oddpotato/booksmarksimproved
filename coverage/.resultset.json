@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/eb/Projects/week4/bookmark-manager/spec/features/viewing_bookmark_spec.rb": {
+      "/Users/appscat/Projects/Lizzy_Bookmarks/bookmark-manager/spec/features/viewing_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -11,13 +11,11 @@
           1,
           1,
           1,
-          0,
-          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1629208071
+    "timestamp": 1629209518
   }
 }
