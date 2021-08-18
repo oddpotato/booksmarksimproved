@@ -5,7 +5,7 @@ feature 'Adding a bookmark' do
 
     scenario 'A user wants to add a bookmark' do
         fill_in('Add Bookmark', with: 'https://www.marginalrevolution.com')
-        click('Add Bookmark')
+        click_on('Add Bookmark')
         expect(page).to have_content('https://www.marginalrevolution.com')
     end
 end
