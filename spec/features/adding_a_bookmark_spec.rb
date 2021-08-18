@@ -7,6 +7,6 @@ feature 'Adding a bookmark' do
         fill_in('url', with: 'https://www.marginalrevolution.com')
         fill_in('title', with: 'Marginal Revolution')
         click_on('Add Bookmark')
-        expect(page).to have_content('https://www.marginalrevolution.com')
+        expect(page).to have_content('Marginal Revolution')
     end
 end
