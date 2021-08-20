@@ -1,6 +1,6 @@
 feature 'Adding a bookmark' do
     before(:each) do
-        visit('/add-bookmark')
+        visit('/bookmark/add')
     end
 
     scenario 'A user wants to add a bookmark' do

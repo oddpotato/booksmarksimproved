@@ -2,16 +2,16 @@
 -----
 
 GET - '/' erb :index - Just says bookmarks
-Two GET link - ADD - VIEW 
+Three GET link - ADD - VIEW - DELETE
 
 -------
 #####
 
 ADD
 
-GET - '/add-bookmark' - ADD
-POST - '/' 
-GET - '/' 
+GET - '/bookmark/add' - ADD
+POST - '/bookmark/add' 
+GET - '/bookmarks' 
 
 ####
 -------
@@ -23,3 +23,10 @@ GET - '/bookmarks' erb :bookmarks - shows bookmarks
 
 ####
 ------
+####
+
+DELETE
+
+GET - '/bookmark/delete' - DELETE
+POST - '/bookmark/delete'
+GET - '/bookmarks'

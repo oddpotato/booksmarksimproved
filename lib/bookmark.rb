@@ -9,7 +9,7 @@ class Bookmark
       @connection = PG.connect(dbname: 'bookmark_manager')
     end
     @bookmarks = @connection.exec('SELECT * FROM bookmarks')
-    #@list = @bookmarks.map { |bookmark| bookmark['url'] }
+    
   end
 
   def self.create(url:, title:)
@@ -17,9 +17,8 @@ class Bookmark
       @connection = PG.connect(dbname: 'bookmark_manager_test')
     else
       @connection = PG.connect(dbname: 'bookmark_manager')
-    end
-
-    @connection.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}')")
+   end
+    @connection.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1, $2);", [url, title])
   end
 end
 
